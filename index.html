@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign in/Sign Up</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-box">
+                <h1>Sign up</h1>
+                <form action="" method="post">
+                    <label for="signupname">Username:</label><br>
+                    <input 
+                        type="text" 
+                        name="signupname" 
+                        id="signupname" 
+                        required
+                        minlength="6"
+                    ><br>
+                    <label for="signupmail">Email:</label><br>
+                    <input 
+                        type="email" 
+                        name="signupmail" 
+                        id="signupmail" 
+                        required
+                        pattern=".+@.+\..+"
+                    ><br>
+                    <label for="signupbirthdate">Birthdate:</label><br>
+                    <input 
+                        type="date" 
+                        name="signupbirthdate" 
+                        id="signupbirthdate" 
+                        required
+                        min="1920-01-01"
+                        max="2006-12-31"
+                    ><br>
+                    <label for="signuppass">Password:</label><br>
+                    <input 
+                        type="password" 
+                        name="signuppass" 
+                        id="signuppass" 
+                        required
+                        minlength="7"
+                        pattern="(?=.*[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^A-Za-z0-9]).{8,}"
+                    ><br>
+                    <label for="signuppassconfirm">Confirm Password:</label><br>
+                    <input 
+                        type="password" 
+                        name="signuppassconfirm" 
+                        id="signuppassconfirm" 
+                        required
+                        minlength="7"
+                        pattern="(?=.*[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^A-Za-z0-9]).{8,}"
+                    ><br><br>
+                    <input type="submit" value="Sign up">
+                </form>
+            </div>
+
+            <div class="container-box">
+                <h1>Sign in</h1>
+                <form action="" method="post">
+                    <label for="signinname">Username:</label><br>
+                    <input 
+                        type="text" 
+                        name="signinname" 
+                        id="signinname" 
+                        required
+                        minlength="6"
+                    ><br>
+                    <label for="signinpass">Password:</label><br>
+                    <input 
+                        type="text" 
+                        name="signinpass" 
+                        id="signinpass" 
+                        required
+                        minlength="7"
+                        pattern="(?=.*[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^A-Za-z0-9]).{8,}"
+                    ><br><br>
+                    <input type="submit" value="Sign in">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

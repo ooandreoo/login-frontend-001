@@ -1,2 +1,2 @@
-# login-frontend-001
-Simple login made with html and css for educational purposes
+# login-frontend-0001
+Login frontend built only with html and css for learning purposes
